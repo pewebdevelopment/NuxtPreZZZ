@@ -132,21 +132,21 @@ const itemPro = {
 
     <SectionMain>
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <CardBoxPricing
+        <PremiumCardBoxPricing
           :item="itemBeginner"
           :price="pricingCurrent.beginner"
           :period="periodStr"
           class="xl:ml-12"
         />
 
-        <CardBoxPricing
+        <PremiumCardBoxPricing
           :item="itemStandard"
           :price="pricingCurrent.standard"
           :period="periodStr"
           is-main
         />
 
-        <CardBoxPricing
+        <PremiumCardBoxPricing
           :item="itemPro"
           :price="pricingCurrent.pro"
           :period="periodStr"
