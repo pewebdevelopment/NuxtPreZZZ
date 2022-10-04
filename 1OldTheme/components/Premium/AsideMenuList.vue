@@ -1,11 +1,16 @@
 <script setup>
-import AsideMenuItem from "@/components/AsideMenuItem.vue";
+import AsideMenuItem from "@/components/Premium/AsideMenuItem.vue";
 
 defineProps({
   isDropdownList: Boolean,
+  isCompact: Boolean,
   menu: {
     type: Array,
-    required: true,
+    default: () => [],
+  },
+  activeSecondaryMenuKey: {
+    type: String,
+    default: null,
   },
 });
 
@@ -23,6 +28,8 @@ const menuClick = (event, item) => {
       :key="index"
       :item="item"
       :is-dropdown-list="isDropdownList"
+      :is-compact="isCompact"
+      :active-secondary-menu-key="activeSecondaryMenuKey"
       @menu-click="menuClick"
     />
   </ul>

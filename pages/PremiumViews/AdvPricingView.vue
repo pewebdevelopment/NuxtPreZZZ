@@ -1,11 +1,11 @@
 <script setup>
 import { ref, computed } from "vue";
-import SectionMain from "@/components/SectionMain.vue";
-import BaseButtons from "@/components/BaseButtons.vue";
-import BaseButton from "@/components/BaseButton.vue";
-import SectionTitle from "@/components/SectionTitle.vue";
-import CardBoxPricing from "@/components/Premium/CardBoxPricing.vue";
-import LayoutAuthenticated from "@/layouts/LayoutAuthenticated.vue";
+// import SectionMain from "@/components/SectionMain.vue";
+// import BaseButtons from "@/components/BaseButtons.vue";
+// import BaseButton from "@/components/BaseButton.vue";
+// import SectionTitle from "@/components/SectionTitle.vue";
+// import CardBoxPricing from "@/components/Premium/CardBoxPricing.vue";
+
 
 const period = ref("monthly");
 
@@ -103,7 +103,8 @@ const itemPro = {
 </script>
 
 <template>
-  <LayoutAuthenticated>
+  <div>
+  <NuxtLayout name = "zen">
     <SectionTitle custom>
       <h1 class="text-5xl lg:text-6xl font-black">Sample Pricing</h1>
       <h2 class="text-2xl">some catchy headline</h2>
@@ -153,5 +154,6 @@ const itemPro = {
         />
       </div>
     </SectionMain>
-  </LayoutAuthenticated>
+  </NuxtLayout>
+</div>
 </template>

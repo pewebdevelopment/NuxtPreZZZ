@@ -1,6 +1,7 @@
 <script setup>
-import AsideMenuLayer from "@/components/AsideMenuLayer.vue";
-import OverlayLayer from "@/components/OverlayLayer.vue";
+// import AsideMenuLayer from "~~/1OldTheme/components/Premium/AsideMenuLayer.vue";
+// import OverlayLayer from "@/components/OverlayLayer.vue";
+// import { useLayoutStore } from "@/stores/layout.js";
 
 defineProps({
   menu: {

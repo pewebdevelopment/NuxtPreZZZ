@@ -2,16 +2,16 @@
 import { reactive, ref, computed } from "vue";
 import { RouterLink } from "vue-router";
 import { mdiAccount, mdiHome } from "@mdi/js";
-import SectionFormScreen from "@/components/Premium/SectionFormScreen.vue";
-import CardBox from "@/components/CardBox.vue";
-import FormCheckRadioPicker from "@/components/FormCheckRadioGroup.vue";
-import FormField from "@/components/FormField.vue";
-import FormControl from "@/components/FormControl.vue";
-import BaseButton from "@/components/BaseButton.vue";
-import BaseLevel from "@/components/BaseLevel.vue";
-import BaseButtons from "@/components/BaseButtons.vue";
-import ButtonTextLink from "@/components/Premium/ButtonTextLink.vue";
-import LayoutGuest from "@/layouts/LayoutGuest.vue";
+// import SectionFormScreen from "@/components/Premium/SectionFormScreen.vue";
+// import CardBox from "@/components/CardBox.vue";
+// import FormCheckRadioPicker from "@/components/FormCheckRadioGroup.vue";
+// import FormField from "@/components/FormField.vue";
+// import FormControl from "@/components/FormControl.vue";
+// import BaseButton from "@/components/BaseButton.vue";
+// import BaseLevel from "@/components/BaseLevel.vue";
+// import BaseButtons from "@/components/BaseButtons.vue";
+// import ButtonTextLink from "@/components/Premium/ButtonTextLink.vue";
+
 
 const form = reactive({
   login: "johndoe",
@@ -43,10 +43,11 @@ const passShowHideClicked = ref(true);
 </script>
 
 <template>
-  <LayoutGuest>
+  <div>
+  <NuxtLayout name="zen">
     <SectionFormScreen v-slot="{ cardClass }" bg="purplePink" has-promo>
       <CardBox
-        :class="[cardClass, cardClassAddon]"
+    :class="[cardClass, cardClassAddon]"
         is-form
         @submit.prevent="submit"
       >
@@ -110,5 +111,6 @@ const passShowHideClicked = ref(true);
         </template>
       </CardBox>
     </SectionFormScreen>
-  </LayoutGuest>
+  </NuxtLayout>
+  </div>
 </template>
