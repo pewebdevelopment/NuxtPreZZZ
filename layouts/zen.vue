@@ -11,7 +11,7 @@ import BaseIcon from "@/components/BaseIcon.vue";
 import FormControl from "@/components/FormControl.vue";
 
 import NavBarItemPlain from "@/components/NavBarItemPlain.vue";
-import AsideMenu from "@/components/AsideMenu.vue";
+import AsideMenu from "~~/components/Premium/AsideMenu.vue";
 import FooterBar from "@/components/FooterBar.vue";
 
 useMainStore().setUser({
