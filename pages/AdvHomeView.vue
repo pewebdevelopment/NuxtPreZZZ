@@ -19,21 +19,21 @@ import {
   mdiCreditCardOutline,
 } from "@mdi/js";
 import * as chartConfig from "@/components/Charts/chart.config.js";
-import LineChart from "@/components/Charts/LineChart.vue";
-import SectionMain from "@/components/SectionMain.vue";
-import SectionTitleLineWithButton from "@/components/SectionTitleLineWithButton.vue";
-import CardBoxWidget from "@/components/CardBoxWidget.vue";
-import CardBox from "@/components/CardBox.vue";
-import TableSampleClients from "@/components/TableSampleClients.vue";
-import NotificationBar from "@/components/NotificationBar.vue";
-import CardBoxClient from "@/components/CardBoxClient.vue";
-import CardBoxTransaction from "@/components/CardBoxTransaction.vue";
-import CardBoxProduct from "@/components/Premium/CardBoxProduct.vue";
-import CardBoxAmountItem from "@/components/Premium/CardBoxAmountItem.vue";
-import BaseButtons from "@/components/BaseButtons.vue";
-import BaseButton from "@/components/BaseButton.vue";
-import UserCard from "@/components/Premium/UserCard.vue";
-import LayoutAuthenticated from "@/layouts/LayoutAuthenticated.vue";
+// import LineChart from "@/components/Charts/LineChart.vue";
+// import SectionMain from "@/components/SectionMain.vue";
+// import SectionTitleLineWithButton from "@/components/SectionTitleLineWithButton.vue";
+// import CardBoxWidget from "@/components/CardBoxWidget.vue";
+// import CardBox from "@/components/CardBox.vue";
+// import TableSampleClients from "@/components/TableSampleClients.vue";
+// import NotificationBar from "@/components/NotificationBar.vue";
+// import CardBoxClient from "@/components/CardBoxClient.vue";
+// import CardBoxTransaction from "@/components/CardBoxTransaction.vue";
+// import CardBoxProduct from "@/components/Premium/CardBoxProduct.vue";
+// import CardBoxAmountItem from "@/components/Premium/CardBoxAmountItem.vue";
+// import BaseButtons from "@/components/BaseButtons.vue";
+// import BaseButton from "@/components/BaseButton.vue";
+// import UserCard from "@/components/Premium/UserCard.vue";
+
 
 const mainStore = useMainStore();
 
@@ -87,7 +87,9 @@ const productBarItems = computed(() => mainStore.products);
 </script>
 
 <template>
-  <LayoutAuthenticated>
+
+  <div>
+  <NuxtLayout name ="zen">
     <SectionMain>
       <SectionTitleLineWithButton
         :icon="mdiChartTimelineVariant"
@@ -266,5 +268,7 @@ const productBarItems = computed(() => mainStore.products);
         <TableSampleClients />
       </CardBox>
     </SectionMain>
-  </LayoutAuthenticated>
+  </NuxtLayout>
+
+</div>
 </template>

@@ -11,20 +11,20 @@ import {
   mdiReload,
   mdiCreditCardOutline,
 } from "@mdi/js";
-import { buttonMenuOptions } from "@/sampleButtonMenuOptions.js";
-import SectionMain from "@/components/SectionMain.vue";
-import SectionTitleLineWithButton from "@/components/SectionTitleLineWithButton.vue";
-import CardBox from "@/components/CardBox.vue";
-import FormCheckRadioGroup from "@/components/FormCheckRadioGroup.vue";
-import FormFilePicker from "@/components/FormFilePicker.vue";
-import FormField from "@/components/Premium/FormField.vue";
-import FormControl from "@/components/Premium/FormControl.vue";
-import BaseDivider from "@/components/BaseDivider.vue";
-import ButtonMenu from "@/components/Premium/ButtonMenu.vue";
-import BaseButton from "@/components/BaseButton.vue";
-import SectionTitle from "@/components/SectionTitle.vue";
-import LayoutAuthenticated from "@/layouts/LayoutAuthenticated.vue";
-import CardBoxComponentTitle from "@/components/CardBoxComponentTitle.vue";
+// import { buttonMenuOptions } from "@/configs/sampleButtonMenuOptions.js";
+// import SectionMain from "@/components/SectionMain.vue";
+// import SectionTitleLineWithButton from "@/components/SectionTitleLineWithButton.vue";
+// import CardBox from "@/components/CardBox.vue";
+// import FormCheckRadioGroup from "@/components/FormCheckRadioGroup.vue";
+// import FormFilePicker from "@/components/FormFilePicker.vue";
+// import FormField from "@/components/Premium/FormField.vue";
+// import FormControl from "@/components/Premium/FormControl.vue";
+// import BaseDivider from "@/components/BaseDivider.vue";
+// import ButtonMenu from "@/components/Premium/ButtonMenu.vue";
+// import BaseButton from "@/components/BaseButton.vue";
+// import SectionTitle from "@/components/SectionTitle.vue";
+
+// import CardBoxComponentTitle from "@/components/CardBoxComponentTitle.vue";
 
 const selectFieldOptions = [
   { id: 1, label: "Business development" },
@@ -94,7 +94,8 @@ const formErrorSubmit = () => {
 </script>
 
 <template>
-  <LayoutAuthenticated>
+  <div>  
+  <NuxtLayout name = "zen">
     <SectionMain>
       <SectionTitleLineWithButton
         :icon="mdiBallotOutline"
@@ -491,5 +492,7 @@ const formErrorSubmit = () => {
         </template>
       </CardBox>
     </SectionMain>
-  </LayoutAuthenticated>
+  </NuxtLayout>
+
+</div>
 </template>
