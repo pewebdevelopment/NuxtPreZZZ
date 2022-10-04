@@ -1,5 +1,5 @@
 <script setup>
-import { getButtonColor } from "@/colors.js";
+import { getButtonColor } from "@/configs/colors.js";
 import { controlTextColor } from "@/colorsPremium.js";
 import { computed, ref, onMounted, onBeforeUnmount } from "vue";
 import { useMainStore } from "@/stores/main.js";
