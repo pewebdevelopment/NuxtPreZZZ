@@ -6,8 +6,8 @@ import {
   gradientBgPurplePink,
   gradientBgDark,
   gradientBgPinkRed,
-} from "@/colors.js";
-import { gradientBgYellowRed, gradientBgRedYellow } from "@/colorsPremium.js";
+} from "@/configs/colors.js";
+import { gradientBgYellowRed, gradientBgRedYellow } from "@/configs/colorsPremium.js";
 import JustboilLogo from "@/components/JustboilLogo.vue";
 import BaseButtons from "@/components/BaseButtons.vue";
 import BaseButton from "@/components/BaseButton.vue";

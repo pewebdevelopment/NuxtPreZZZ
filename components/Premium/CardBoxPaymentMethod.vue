@@ -1,11 +1,11 @@
 <script setup>
 import { mdiTrashCan, mdiCreditCardEdit, mdiCreditCardCheck } from "@mdi/js";
 import { computed } from "vue";
-import CardBox from "../CardBox.vue";
-import BaseButtons from "../BaseButtons.vue";
-import BaseButton from "../BaseButton.vue";
-import PillTag from "../PillTag.vue";
-import CreditCardLogo from "./CreditCardLogo.vue";
+import CardBox from "@/components/CardBox.vue";
+import BaseButtons from "@/components/BaseButtons.vue";
+import BaseButton from "@/components/BaseButton.vue";
+import PillTag from "@/components/PillTag.vue";
+import CreditCardLogo from "@/components/Premium/CreditCardLogo.vue";
 
 const props = defineProps({
   cardType: {

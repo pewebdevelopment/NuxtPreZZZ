@@ -1,5 +1,5 @@
 <script setup>
-import { controlTextColor } from "@/colorsPremium.js";
+import { controlTextColor } from "@/configs/colorsPremium.js";
 import { computed, useSlots } from "vue";
 import FormFieldHelp from "@/components/Premium/FormFieldHelp.vue";
 
