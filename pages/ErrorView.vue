@@ -1,13 +1,14 @@
-<script setup>
+<!-- <script setup>
 import SectionFullScreen from "@/components/SectionFullScreen.vue";
 import CardBox from "@/components/CardBox.vue";
 import BaseButton from "@/components/BaseButton.vue";
 import BaseButtons from "@/components/BaseButtons.vue";
 import LayoutGuest from "@/layouts/LayoutGuest.vue";
-</script>
+</script> -->
 
 <template>
-  <LayoutGuest>
+  <div>
+  <NuxtLayout name = "zen">
     <SectionFullScreen v-slot="{ cardClass }" bg="pinkRed">
       <CardBox :class="cardClass">
         <div class="space-y-3">
@@ -23,5 +24,6 @@ import LayoutGuest from "@/layouts/LayoutGuest.vue";
         </template>
       </CardBox>
     </SectionFullScreen>
-  </LayoutGuest>
+  </NuxtLayout>
+</div>
 </template>

@@ -4,7 +4,7 @@ import { useStyleStore } from "@/stores/style.js";
 import { gradientBgPurplePink } from "@/configs/colors.js";
 import SectionMain from "@/components/SectionMain.vue";
 import CardBox from "@/components/CardBox.vue";
-import LayoutGuest from "@/layouts/LayoutGuest.vue";
+// import LayoutGuest from "@/layouts/LayoutGuest.vue";
 
 const styles = ["white", "basic"];
 
@@ -21,7 +21,8 @@ const click = (slug) => {
 </script>
 
 <template>
-  <LayoutGuest>
+  <div>
+  <NuxtLayout name = "zen">
     <div
       :class="gradientBgPurplePink"
       class="flex min-h-screen items-center justify-center"
@@ -64,5 +65,6 @@ const click = (slug) => {
         </div>
       </SectionMain>
     </div>
-  </LayoutGuest>
+  </NuxtLayout>
+</div>
 </template>
