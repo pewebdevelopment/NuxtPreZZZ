@@ -26,7 +26,7 @@ import FormControl from "@/components/FormControl.vue";
 import FormFilePicker from "@/components/FormFilePicker.vue";
 import BaseButton from "@/components/BaseButton.vue";
 import BaseButtons from "@/components/BaseButtons.vue";
-import LayoutAuthenticated from "@/layouts/LayoutAuthenticated.vue";
+
 import SectionTitleLineWithButton from "@/components/SectionTitleLineWithButton.vue";
 import UserAvatarCurrentUserWithUpload from "@/components/Premium/UserAvatarCurrentUserWithUpload.vue";
 import PillTag from "@/components/PillTag.vue";
