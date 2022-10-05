@@ -1,1 +1,1 @@
-export { default } from "file:///D:/0.%20Code%20For%20Life/07.%20VuePre%20to%20Nuxt/nuxtTailwindStarter00/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
+export { default } from "file:///D:/0.%20Code%20For%20Life/07.%20VuePre%20to%20Nuxt/nuxtTailwindStarter01/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

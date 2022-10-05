@@ -6,10 +6,10 @@
     "module": true,
     "resourceType": "script"
   },
-  "D:/0. Code For Life/07. VuePre to Nuxt/nuxtTailwindStarter00/node_modules/nuxt/dist/app/entry.mjs": {
+  "D:/0. Code For Life/07. VuePre to Nuxt/nuxtTailwindStarter01/node_modules/nuxt/dist/app/entry.mjs": {
     "resourceType": "script",
     "module": true,
     "isEntry": true,
-    "file": "D:/0. Code For Life/07. VuePre to Nuxt/nuxtTailwindStarter00/node_modules/nuxt/dist/app/entry.mjs"
+    "file": "D:/0. Code For Life/07. VuePre to Nuxt/nuxtTailwindStarter01/node_modules/nuxt/dist/app/entry.mjs"
   }
 }
